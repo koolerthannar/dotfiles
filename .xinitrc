@@ -3,6 +3,6 @@
 xbindkeys
 picom &
 (conky | while read LINE; do xsetroot -name "$LINE"; done) &
-#(sleep 1s && polybar example) &
-xscreensaver -no-splash &
+sh /mnt/storage/e/xssstate/xssidle.sh slock &
+#xscreensaver -no-splash &
 exec dwm
